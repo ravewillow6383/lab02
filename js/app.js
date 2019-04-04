@@ -1,23 +1,30 @@
 'use strict';
 
-alert('Hi! Welcome to my page. I have a few questions for you to see how well you know me!');
-
-var userName = prompt('First, What is your name?');
 var correctAnswers = 0;
-
-var anySiblings = prompt('Do I have any siblings? ').toLowerCase();
-
-if(anySiblings === 'y' || anySiblings === 'yes') {
-  alert('You guessed it! I\'m the youngest of SEVEN kids!');
-  correctAnswers++;
-} else if(anySiblings === 'n' || anySiblings === 'no') {
-  alert('You got it all wrong!');
-} else {
-  alert('This was a yes or no question. How did you mess that up?');
+var userName = 'Please enter your name'
+function questionOne(){
+userName = prompt('First, What is your name?');
 }
 
-console.log('Does the user think that I have any siblings: ' , anySiblings);
+alert('Hi! Welcome to my page. I have a few questions for you to see how well you know me!');
+// Gabriel - Question 1 begins, asking user their name.
+function questionTwo(){
+  var anySiblings = prompt('Do I have any siblings? ').toLowerCase();
 
+  if(anySiblings === 'y' || anySiblings === 'yes') {
+    alert('You guessed it! I\'m the youngest of SEVEN kids!');
+    correctAnswers++;
+  } else if(anySiblings === 'n' || anySiblings === 'no') {
+    alert('You got it all wrong!');
+  } else {
+    alert('This was a yes or no question. How did you mess that up?');
+  }
+console.log('Does the user think that I have any siblings: ' , anySiblings);
+}
+// Gabriel - Question 2 begins asking user if they have pets.
+
+  
+function questionThree(){
 var anyPets = prompt('Do i have any pets?').toLowerCase();
 
 if(anyPets === 'y' || anyPets === 'yes') {
@@ -30,9 +37,9 @@ if(anyPets === 'y' || anyPets === 'yes') {
 }
 
 console.log('Does the user think I have any pets: ' , anyPets);
-
+}
+function questionFour(){
 var washingtonNative = prompt('Do you think I am native to Washington State?').toLowerCase();
-
 if(washingtonNative === 'y' || washingtonNative === 'yes') {
   alert('Yep! King County, born and raised.');
   correctAnswers++;
@@ -41,11 +48,10 @@ if(washingtonNative === 'y' || washingtonNative === 'yes') {
 } else {
   alert('Hmm. I think the answer you were looking for was, yes.');
 }
-
 console.log('Does the User think that I am originally from Washington State: ' , washingtonNative );
-
+}
+function questionFive(){
 var beenOnACruise = prompt('Have I ever been on a cruise?').toLowerCase();
-
 if(beenOnACruise === 'y' || beenOnACruise === 'yes') {
   alert('Nope. I have higher hopes for my vacations than being stuck on the Ocean with strangers!');
 } else if(beenOnACruise === 'n' || beenOnACruise === 'no') {
@@ -54,11 +60,11 @@ if(beenOnACruise === 'y' || beenOnACruise === 'yes') {
 } else {
   alert('?????');
 }
-
 console.log('Does the user think I have been on a cruise: ' , beenOnACruise);
+}
 
+function questionSix(){
 var playLotto = prompt('Do you think that I play the lottery?').toLowerCase();
-
 if(playLotto === 'y' || playLotto === 'yes') {
   alert('You bet! You can\'t win if you don\'t play.');
   correctAnswers++;
@@ -69,9 +75,9 @@ if(playLotto === 'y' || playLotto === 'yes') {
 }
 
 console.log('Does the user think that I play the lotto: ' , playLotto);
-
+}
+function questionSeven(){
 var numberOfTattoos = Number(prompt('I will give you five chances at guessing how many tattoos I have!'));
-
 console.log('Checking prompt on first use input for how many tats they think I have:' , numberOfTattoos);
 
 var guessesRemaining = 5;
@@ -95,7 +101,8 @@ if(numberOfTattoos === 6) {
     }
   }
 }
-
+}
+function questionEight(){
 alert('You already know that I have a dog. I love animals and I have had a variety of pets in my life!');
 
 var petsIHad = ['ferret', 'crow', 'pigeon', 'bird', 'lizard', 'gerbil'];
@@ -123,12 +130,11 @@ while(numberOfGuesses > 0) {
     alert('All done! Here are some of the animals I have had as pets: ');
   }
 }
-
 // To tell the users all of the possible correct answers
 for(var j=0; j < petsIHad.length; j++) {
   alert(petsIHad[j]);
 }
-
+}
 console.log('checking correct answers math:' , correctAnswers)
 
 if(correctAnswers < 4){
@@ -144,5 +150,29 @@ if(correctAnswers === 7){
 }
 
 
+// var userAnswers 
+
+// var anyPets = prompt('Do i have any pets?').toLowerCase();
+
+// var aboutMe = function(alertResponse, alertNegative) {
+//   if(userAnswer === true) {
+//     alert('Correct! I have a' + alertResponse)
+//     correctAnswers++;
+//   } else if(userAnswer === false) {
+//     alert(alertNegative);
+//   } else {
+//     alert('What?? Yes or no only, please!');
+  
+// }
+  
+// }
 
 
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
+questionSeven();
+questionEight();
