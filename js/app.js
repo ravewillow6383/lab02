@@ -2,7 +2,8 @@
 
 // alert('Hi! Welcome to my page. I have a few questions for you to see how well you know me!');
 // var correctAnswers = 0;
-// var userName = prompt('First, What is your name?');
+// var userName = prompt('First, what is your name?');
+// alert('Great to see you, ' + userName + '! Let\'s get started!');
 
 // // Gabriel - Question 1 begins, asking user their name.
 // function questionOne() {
@@ -24,12 +25,12 @@
 //   var anyPets = prompt('Do i have any pets?').toLowerCase();
 
 //   if(anyPets === 'y' || anyPets === 'yes') {
-//     alert('Correct, + ' + userName + '! I have a 14 year old pitbull named Bruce.');
+//     alert('Correct, ' + userName + '! I have a 14 year old pitbull named Bruce.');
 //     correctAnswers++;
 //   } else if(anyPets === 'n' || anyPets === 'no') {
 //     alert('Wrong, ' + userName + '! I have a 14 year old dog named Bruce.');
 //   } else {
-//     alert('What?? Yes or no only, please, + ' + userName + '!');
+//     alert('What?? Yes or no only, please, ' + userName + '!');
 //   }
 //   console.log('Does the user think I have any pets: ' , anyPets);
 // }
@@ -37,7 +38,7 @@
 // function questionThree() {
 //   var washingtonNative = prompt('Do you think I am native to Washington State?').toLowerCase();
 //   if(washingtonNative === 'y' || washingtonNative === 'yes') {
-//     alert('Yep,' + userName + '! King County, born and raised.');
+//     alert('Yep, ' + userName + '! King County, born and raised.');
 //     correctAnswers++;
 //   } else if(washingtonNative === 'n' || washingtonNative === 'no') {
 //     alert('Wrong, ' + userName + '! I was born in my parents bedroom right here in Redmond, WA!');
@@ -74,13 +75,13 @@
 //   console.log('Does the user think that I play the lotto: ' , playLotto);
 // }
 // function questionSix() {
-//   var numberOfTattoos = Number(prompt('Hey,' + userName + 'I will give you five chances at guessing how many tattoos I have!'));
+//   var numberOfTattoos = Number(prompt('Hey, ' + userName + 'I will give you five chances at guessing how many tattoos I have!'));
 //   var guessesRemaining = 5;
 //   console.log('Checking prompt on first use input for how many tats they think I have:' , numberOfTattoos);
 
 //   // I am writing my 'if' statement and while loop this way because it's the only format that I tried that finally worked. Although I feel as though the first if and the 2nd if should be able to be combined, I couldn't get my code to loop proberly and break the loop properly when I only had the first or third 'if' statements as opposed to both.
 //   if(numberOfTattoos === 6) {
-//     alert('Correct! I spent more money than I care to discuss on my six tattoos!');
+//     alert('Correct! I have spent more money than I care to discuss on my ink.');
 //     correctAnswers++;
 //   } else {
 //     while(guessesRemaining > 1 && numberOfTattoos !== 6) {
@@ -128,10 +129,8 @@
 //     }
 //   }
 //   // To tell the users all of the possible correct answers.
-//   for(var j=0; j < petsIHad.length; j++) {
-//     alert(petsIHad[j]);
-//   }
-
+//   alert(petsIHad);
+//   console.log("checking array" , petsIHad);
 //   console.log('checking correct answers math:' , correctAnswers);
 
 //   if(correctAnswers < 4){

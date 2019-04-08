@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(153, 178, 219);
+    background-image:url(https://cdn.pixabay.com/photo/2017/08/10/19/55/halloween-2627200_960_720.jpg); background-repeat: repeat;
 }
 
 img {
@@ -52,11 +52,11 @@ p {
     margin: 120px;
     float:bottom;
     border:double;
-    border-color: blue;
+    border-color:black;
     padding: 100px;
     text-decoration: none;
     border-width: 15px;
-    background-color:rgb(116, 144, 188);
+    background-color:rgba(51,51,204,0.4);
 }
 
 h3 {
@@ -84,7 +84,7 @@ ul {
     padding: 10px;
     border: solid;
     border-width:10px;
-    background-color:blue;
+    background-color:rgba(204,51,102,0.4);
     color: white;
     margin-left: 25px;
     margin-right:25px;
@@ -111,4 +111,12 @@ li {
 
 #white{
     color:white;
+    background-color: none;
+}
+
+#dog{
+    position:relative;
+    float:right;
+    right: 180px;
+    top: 80px;
 }
