@@ -4,12 +4,10 @@ body {
 
 img {
     width: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
     border: groove;
     border-color:silver;
     border-width: 10px;
+    float:left;
 }
 
 h1 {
@@ -18,7 +16,7 @@ h1 {
     background-color: black
 }
 
-h2 {
+h2, h4 {
     font-size: 55px;
     color: rgb(255, 204, 255);
     text-align: center;
