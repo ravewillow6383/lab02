@@ -5,7 +5,6 @@ var correctAnswers = 0;
 var userName = prompt('First, what is your name?');
 alert('Great to see you, ' + userName + '! Let\'s get started!');
 
-// Gabriel - Question 1 begins, asking user their name.
 function questionOne() {
   var anySiblings = prompt('Do I have any siblings? ').toLowerCase();
 
@@ -19,7 +18,6 @@ function questionOne() {
   }
   console.log('Does the user think that I have any siblings: ' , anySiblings);
 }
-// Gabriel - Question 2 begins asking user if they have pets.
 
 function questionTwo() {
   var anyPets = prompt('Do i have any pets?').toLowerCase();
@@ -130,7 +128,7 @@ function questionSeven() {
   }
   // To tell the users all of the possible correct answers.
   alert(petsIHad);
-  console.log("checking array" , petsIHad);
+  console.log('checking array' , petsIHad);
   console.log('checking correct answers math:' , correctAnswers);
 
   if(correctAnswers < 4){
